@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <head>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="materialize/css/style.css">
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="/materialize/js/materialize.js"></script>   
+
+      <meta lang="pt-br" charset="UTF-8">
+      <title>Aula IFPE - Exp Curriculo Danilo</title>
+
+      <title>Curriculo Pessoal</title>
+
+      <style>
+        <!--fieldset {
+            background-color: #8e9ef0;
+       }
+       legend {
+            background-color: rgb(114, 142, 242);
+            color: white;
+            padding: 5px 10px;
+       }
+        .ex1 {
+            background-color:rgb(231, 244, 248);
+       }
+       .formatar {
+            text-align: left;
+            padding-left: 10px;
+       }
+
+       .radio-inline input[type=radio]{
+            position:absolute;
+            margin-top:4px\9;
+            margin-left:-20px
+       }-->
+ 
+      </style>
+    </head>
+
+  <body class="container">
+
+    <form action="/action_page.php">
+     <fieldset>
+      <legend>Formulario de Inscrição:</legend>
+      <label for="fname">Name:</label> &emsp;&emsp;
+      <input type="text" id="name" name="name" value="Digite seu nome"><br><br>
+
+      <label for="snome">Sobrenome:</label>
+      <input type="text" id="sname" name="sname" value="Digite seu Sobrenome"><br><br>
+
+      <label for="Idade">Idade:</label> &emsp;&emsp;
+      <input style="width:40px"type="number" id="idade" name="idade" min="18" max="120"><br><br>
+
+      <label for="email">Email:</label> &emsp;&emsp;
+      <input type="email" id="email" name="email" value="Insira seu e-mail"><br><br>
+
+      <label for="sexo">Sexo:</label> &emsp;&emsp;
+      <input type="radio" id="sexo" name="sexo" VALUE="op1">Marculino
+      <input type="radio" id="sexo" name="sexo" VALUE="op2">Feminino<br><br>
+      
+      <label for="foto">Foto:</label> &emsp;&emsp;
+      <input type="file" id="file" name="file" accept="image/jpeg,png"><br><br>
+
+      <label for="cars">País:</label> &emsp;&emsp;
+      <select name="pais" id="pais">
+      <option value="argetina">Argentina</option>
+      <option value="brasil">Brasil</option>
+      <option value="eua">Estados Unidos</option>
+      <option value="franca">França</option>
+      </select>
+      <br><br>
+
+      <input type="submit" value="Submit">
+     </fieldset>
+    </form>
+
+   
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
