@@ -12,40 +12,21 @@
       <meta lang="pt-br" charset="UTF-8">
       <title>Aula IFPE - Exp Curriculo Danilo</title>
 
-      <title>Curriculo Pessoal</title>
+      <title>Cadastro usuário</title>
 
       <style>
-        <!--fieldset {
-            background-color: #8e9ef0;
-       }
-       legend {
-            background-color: rgb(114, 142, 242);
-            color: white;
-            padding: 5px 10px;
-       }
-        .ex1 {
-            background-color:rgb(231, 244, 248);
-       }
-       .formatar {
-            text-align: left;
-            padding-left: 10px;
-       }
 
-       .radio-inline input[type=radio]{
-            position:absolute;
-            margin-top:4px\9;
-            margin-left:-20px
-       }-->
+
  
       </style>
     </head>
 
   <body class="container">
 
-    <form action="/action_page.php">
+    <form action="/action_page.php" id="frmreset">
      <fieldset>
       <legend>Formulario de Inscrição:</legend>
-      <label for="fname">Name:</label> &emsp;&emsp;
+      <label for="name">Name:</label> &emsp;&emsp;
       <input type="text" id="name" name="name" value="Digite seu nome"><br><br>
 
       <label for="snome">Sobrenome:</label>
@@ -58,22 +39,42 @@
       <input type="email" id="email" name="email" value="Insira seu e-mail"><br><br>
 
       <label for="sexo">Sexo:</label> &emsp;&emsp;
-      <input type="radio" id="sexo" name="sexo" VALUE="op1">Marculino
-      <input type="radio" id="sexo" name="sexo" VALUE="op2">Feminino<br><br>
+      <input type="radio" id="sexo" name="sexo" value="op1">Marculino
+      <input type="radio" id="sexo" name="sexo" value="op2">Feminino<br><br>
       
-      <label for="foto">Foto:</label> &emsp;&emsp;
+      <label for="foto">Foto:</label> &emsp;&emsp;&ensp;
       <input type="file" id="file" name="file" accept="image/jpeg,png"><br><br>
 
-      <label for="cars">País:</label> &emsp;&emsp;
+      <label for="pais">País:</label> &emsp;&emsp;&ensp;
       <select name="pais" id="pais">
-      <option value="argetina">Argentina</option>
-      <option value="brasil">Brasil</option>
-      <option value="eua">Estados Unidos</option>
-      <option value="franca">França</option>
+      <option value="pais1">Argentina</option>
+      <option value="pais2">Brasil</option>
+      <option value="pais3">Estados Unidos</option>
+      <option value="pais4">França</option>
       </select>
       <br><br>
 
-      <input type="submit" value="Submit">
+      <label for="lingp">Linguagens Preferenciais:</label> &emsp;&emsp;&emsp;&emsp;<br> 
+
+      &emsp;&emsp;&emsp;&emsp;&emsp;<select name="lingp" multiple>
+      <option value="lingp1">Java</option>
+      <option value="lingp2">Python</option>
+      <option value="lingp3">C++</option>
+      <option value="lingp4">C#</option>
+      <option value="lingp5">Ruby</option>
+      <option value="lingp6">JavaScript</option>
+      </select><br><br>
+
+      <label for="areaatuacao">Áreas de <br>Atuação:</label>&emsp;
+      <input type="checkbox" id="areaatuacao" name="areaatuacao" value="op1">Jogos Digitais
+      <input type="checkbox" id="areaatuacao" name="areaatuacao" value="op2">Mobile
+      <input type="checkbox" id="areaatuacao" name="areaatuacao" value="op3">API Desk top<br><br>
+
+
+      <input type="submit" value="Enviar">
+      <input type="reset" value="limpar">
+    
+
      </fieldset>
     </form>
 
