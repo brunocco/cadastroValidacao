@@ -23,16 +23,16 @@
 
   <body class="container">
 
-    <form action="/action_page.php" id="frmreset">
+    <form action="" method="post" id="frmreset">
      <fieldset>
       <legend>Formulario de Inscrição:</legend>
-      <label for="name">Name:</label> &emsp;&emsp;
-      <input type="text" id="name" name="name" value="Digite seu nome"><br><br>
+      <label for="nome">Nome:</label> &emsp;&emsp;
+      <input type="text" id="nome" name="nome" value="Digite seu nome"><br><br>
 
       <label for="snome">Sobrenome:</label>
-      <input type="text" id="sname" name="sname" value="Digite seu Sobrenome"><br><br>
+      <input type="text" id="snome" name="snome" value="Digite seu Sobrenome"><br><br>
 
-      <label for="Idade">Idade:</label> &emsp;&emsp;
+      <label for="idade">Idade:</label> &emsp;&emsp;
       <input style="width:40px"type="number" id="idade" name="idade" min="18" max="120"><br><br>
 
       <label for="email">Email:</label> &emsp;&emsp;
@@ -47,6 +47,7 @@
 
       <label for="pais">País:</label> &emsp;&emsp;&ensp;
       <select name="pais" id="pais">
+      <option value= > </option>
       <option value="pais1">Argentina</option>
       <option value="pais2">Brasil</option>
       <option value="pais3">Estados Unidos</option>
@@ -56,7 +57,7 @@
 
       <label for="lingp">Linguagens Preferenciais:</label> &emsp;&emsp;&emsp;&emsp;<br> 
 
-      &emsp;&emsp;&emsp;&emsp;&emsp;<select name="lingp" multiple>
+      &emsp;&emsp;&emsp;&emsp;&emsp;<select id="lingp" name="lingp" multiple>
       <option value="lingp1">Java</option>
       <option value="lingp2">Python</option>
       <option value="lingp3">C++</option>
@@ -65,13 +66,16 @@
       <option value="lingp6">JavaScript</option>
       </select><br><br>
 
-      <label for="areaatuacao">Áreas de <br>Atuação:</label>&emsp;
+      <label for="areaatuacao" id="areaatuacao">Áreas de <br>Atuação:</label>&emsp;
       <input type="checkbox" id="areaatuacao" name="areaatuacao" value="op1">Jogos Digitais
       <input type="checkbox" id="areaatuacao" name="areaatuacao" value="op2">Mobile
       <input type="checkbox" id="areaatuacao" name="areaatuacao" value="op3">API Desk top<br><br>
 
 
-      <input type="submit" value="Enviar">
+      <!-- <input type="submit" value="Enviar"> -->
+      <button type="submit"  onclick="validar()">Enviar</button>
+      <script src="materialize/js/validacao.js"></script>
+
       <input type="reset" value="limpar">
     
 
