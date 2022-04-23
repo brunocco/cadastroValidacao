@@ -7,7 +7,6 @@ let pais = document.getElementById("pais");
 let lingp = document.getElementById("lingp");
 let areaatuacao = document.getElementById("areaatuacao");
 
-
 function validar(){
     if(nome.value == ''){
         alert("Campo Nome em branco");
@@ -31,10 +30,11 @@ function validar(){
     else if(lingp.value == ''){
         alert("Campo Linguagens Preferenciais em branco");
     }
-    else if(areaatuacao.value == ''){
+    else if(areaatuacao.value == '' ){
         alert("Campo Áreas de Atuação em branco");
     }
     else{
         alert("Enviado com sucesso!!");
     }
 }
+
