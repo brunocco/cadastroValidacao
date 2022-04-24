@@ -21,9 +21,15 @@ function validar(){
         alert("Campo E-mail em branco");
     }
 
-    else if(sexo.value == ''){
+    else if(frmreset.sexo[0].checked == '' || frmreset.sexo[0].checked == null  ){
         alert("Campo Sexo em branco");
     }
+
+    else if(frmreset.areaatuacao[0].checked == '' || frmreset.areaatuacao[0].checked == null  ){
+        alert("Campo Área de atuação em branco");
+    }
+
+
     else if(pais.value == ''){
         alert("Campo Pais em branco");
     }
@@ -38,3 +44,25 @@ function validar(){
     }
 }
 
+/*
+if(frm.sexo.value == "" || frm.txt_endereco.value == null ||
+frm.txt_endereco.value.length < 3) {
+ // Exibiremos um alerta, caso o campo esteja vazio.
+ alert("Por favor, informe o seu endereço.");
+
+
+ escolhaSexo = -1;
+ for (x = frm.sexo.length -1; x > -1; x--) {
+
+    if(frm.rdo_sexo[x].checked) {
+        escolhaSexo = x;
+    }
+ }
+   if(escolhaSexo == -1) {
+    alert("Qual o seu sexo?");
+    frm.sexo[0].focus();
+    return false;
+   }
+}
+
+*/
