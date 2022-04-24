@@ -47,8 +47,8 @@ function validar(){
     }
 
 
-    else{
-        alert("Enviado com sucesso!!");
+    else{       
+        alert("Enviado com sucesso!!");      
     }
 }
 
