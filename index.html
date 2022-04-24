@@ -24,7 +24,7 @@
   <body class="container">
 
     <!-- action em branco, mas pode declarar uma pagina para ir -->
-    <form action="" method="post"  id="frmreset">
+    <form action="" method="post"  id="frmreset" onsubmit="return validar()">
      <fieldset>
       <legend>Formulario de Inscrição:</legend>
       <label for="nome">Nome:</label> &emsp;&emsp;
@@ -74,7 +74,7 @@
       <input type="checkbox" id="areaatuacao" name="areaatuacao2" value="op2">Mobile
       <input type="checkbox" id="areaatuacao" name="areaatuacao3" value="op3">API Desk top<br><br>
 
-      <button type="submit"  onclick="validar()">Enviar</button>
+      <button type="submit">Enviar</button>
       <script src="materialize/js/validacao.js"></script>
 
       <!-- limpa todos os campos -->
